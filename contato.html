@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Healthy Connect: conexão entre doadores de alimentos e instituições sociais.">
+    <title>Fale Conosco | Healthy Connect</title>
+
+    <!-- Ative esta linha criar o arquivo de CSS.
+    <link rel="stylesheet" href="css/style.css">
+    !-->
+</head>
+<body>
+    <a href="#conteudo">Ir para o conteúdo principal</a>
+
+    <!-- O menu é igual nas quatro páginas para facilitar a navegação. -->
+    <header id="topo" class="cabecalho">
+        <a href="index.html" class="marca">
+            <!-- Adicione logo.png à pasta img e retire o comentário da tag img.
+            <img src="img/logo.png" alt="" width="100">
+            -->
+            Healthy Connect
+        </a>
+
+        <nav aria-label="Menu principal">
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre o projeto</a></li>
+                <li><a href="solucao.html">Nossa solução</a></li>
+                <li><a href="contato.html" aria-current="page">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <h1>Fale Conosco</h1>
+        <p>Tem uma dúvida ou sugestão sobre a Healthy Connect? Preencha o formulário abaixo.</p>
+        <p>Os campos com * são obrigatórios.</p>
+
+        <p id="demonstracao">
+            <strong>Demonstração acadêmica:</strong> use dados fictícios.
+            O navegador verifica o preenchimento. Se os campos estiverem corretos,
+            esta página será recarregada. Nenhuma mensagem é entregue à equipe.
+        </p>
+
+        <!-- O botão submit ativa a validação nativa do HTML.
+             O GET volta para esta mesma página; não existe backend de contato.
+             Não use dados reais: os valores aparecem no endereço após validar.
+             Na integração real, o grupo deverá definir o destino e usar POST. -->
+        <form action="contato.html#demonstracao" method="get" class="formulario">
+
+            <p>
+                <label for="nome">Nome completo *</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    minlength="3"
+                    maxlength="100"
+                    autocomplete="name"
+                    required>
+            </p>
+
+            <p>
+                <label for="email">E-mail *</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    maxlength="150"
+                    autocomplete="email"
+                    placeholder="nome@exemplo.com"
+                    required>
+            </p>
+
+            <p>
+                <label for="telefone">Telefone com DDD (opcional)</label>
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    pattern="[0-9]{10,11}"
+                    maxlength="11"
+                    inputmode="numeric"
+                    placeholder="11912345678"
+                    title="Digite o DDD e o número: 10 ou 11 dígitos, sem espaços, parênteses ou traços."
+                    aria-describedby="ajuda-telefone">
+                <small id="ajuda-telefone">Se preencher, use 10 ou 11 números, incluindo o DDD, sem espaços ou símbolos.</small>
+            </p>
+
+            <p>
+                <label for="perfil">Você é *</label>
+                <select id="perfil" name="perfil" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="doador">Doador de alimentos</option>
+                    <option value="instituicao">Representante de uma instituição</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="assunto">Assunto *</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione um assunto</option>
+                    <option value="duvida">Dúvida sobre o projeto</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="parceria">Interesse em parceria</option>
+                    <option value="outro">Outro assunto</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="mensagem">Mensagem *</label>
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="6"
+                    cols="30"
+                    minlength="20"
+                    maxlength="2000"
+                    aria-describedby="ajuda-mensagem"
+                    required></textarea>
+                <small id="ajuda-mensagem">Escreva de 20 a 2.000 caracteres.</small>
+            </p>
+
+            <button type="submit">Validar formulário</button>
+        </form>
+    </main>
+
+    <footer class="rodape">
+        <p>Healthy Connect — Conectando alimentos a quem precisa.</p>
+        <p>Projeto acadêmico de Engenharia de Software — FIAP.</p>
+        <a href="#topo">Voltar ao topo</a>
+    </footer>
+</body>
+</html>

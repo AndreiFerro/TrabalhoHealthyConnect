@@ -1,0 +1,24 @@
+HEALTHY CONNECT — HTML 
+
+
+QUATRO PÁGINAS
+index.html: apresentação e Pitch Vídeo incorporado.
+sobre.html: problema, objetivo, público-alvo e ODS 2.
+solucao.html: descrição das funcionalidades planejadas.
+contato.html: Fale Conosco com validação nativa do HTML5.
+
+
+REQUISITOS ATENDIDOS PELA ESTRUTURA
+- Quatro páginas, abaixo do limite de cinco.
+- Pitch na home, usando o link fornecido pelo grupo.
+- Menu com os mesmos quatro destinos em todas as páginas.
+- Fale Conosco com campos obrigatórios, e-mail, telefone e limites de texto.
+- Nenhum backend; sem cadastro ou reservas operacionais.
+
+O QUE O GRUPO PRECISA COMPLETAR
+- Definir e aplicar a identidade visual por CSS, depois ativar as linhas conectando 
+- Escolher as imagens
+
+IMAGENS
+Coloque logo.png e alimentos.jpg na pasta img.
+
